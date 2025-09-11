@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
@@ -57,18 +57,21 @@
   <body>
     <main class="wrapper">
       <div class="content">
-        <header class="header">
-          <div class="links">
-            <a class="link" href="/" target="_blank">home</a>
-            <a class="link" href="/sequence-planner" target="_blank"
-              >sequence planner</a
-            >
-            <a class="link" href="/mytaxcalc" target="_blank"
-              >malaysia tax calculator</a
-            >
+        <nav class="nav">
+          <div class="nav-links">
+            <a class="nav-link" href="#about">about</a>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#">social</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-link" href="https://www.linkedin.com/in/munimdibosh/" target="_blank">linkedin</a>
+                <a class="dropdown-link" href="https://github.com/itsmunim" target="_blank">github</a>
+                <a class="dropdown-link" href="https://medium.com/@munimdibosh" target="_blank">blog</a>
+                <a class="dropdown-link" href="https://dribbble.com/idibosh" target="_blank">dribbble</a>
+              </div>
+            </div>
           </div>
-        </header>
-        <section class="main">
+        </nav>
+        <section class="hero">
           <img
             src="./images/profile.jpeg"
             alt="profile pic of munim"
@@ -76,63 +79,81 @@
           />
           <h1 class="title">Munim, Md Abdul</h1>
           <p class="subtitle">
-            SDM at Amazon / Engineering Leader / Solutions Designer
-          </p>
-          <p class="about-me">
-            Engineering leader, with years of experience in development &
-            leading teams to deliver highly scalable solutions in agile ways.
-            <br />
-            <br />
-            <p class="lead">I thrive on solving problems and connecting the dots between a challenge and what technology can make possible. My experience blends hands-on engineering with product strategy and people leadership to deliver meaningful, reliable software.</p>
-
-
-<ul class="skills">
-<li>
-<strong>Product &amp; Technology</strong>
-Skilled in product architecture, solution design, system architecture, modern development practices, and cloud-native infrastructures.
-</li>
-
-
-<li>
-<strong>Leadership &amp; Delivery</strong>
-Experienced in people management, delivery leadership, and strategic decision-making to align engineering with business outcomes.
-</li>
-
-
-<li>
-<strong>End-to-End Delivery</strong>
-Hands-on experience delivering complete solutions across mobile, desktop, and web platforms.
-</li>
-
-
-<li>
-<strong>Domain Experience</strong>
-Worked across telemedicine, content marketing, fintech, e-commerce, and real estate.
-</li>
-
-
-<li>
-<strong>Full Development Cycle</strong>
-Deep familiarity with frontend, backend, and infrastructure engineering.
-</li>
-
-
-<li>
-<strong>Agile Practices</strong>
-Advocate and practitioner of Scrum and Kanban.
-</li>
-
-
-<li>
-<strong>Open Source</strong>
-Passionate contributor and supporter of open-source technologies.
-</li>
-</ul>
+            SDM at Amazon / Engineering Leader / Strategic Problem Solver
           </p>
         </section>
+        
+        <section id="about" class="about-section">
+          <p class="about-intro">
+            I focus on solving complex business problems leveraging strategic thinking and use of technology. I enable people with 
+            my years of diverse experience in building solutions that work. My experience spans people leadership, product design, and full-cycle development across various domains.
+          </p>
+          
+          <div class="expertise-section">
+            <h3 class="expertise-toggle" id="expertise-toggle">
+              My expertise
+              <span class="toggle-icon">+</span>
+            </h3>
+            <div class="skills-grid" id="skills-grid">
+              <div class="skill-item">
+                <h3 class="skill-title">Leadership & People Management</h3>
+                <p class="skill-desc">7+ years experience in leading engineering teams, managing individual contributors as well as managers. Making strategic decisions that align technical leadership with business goals is my core expertise.</p>
+              </div>
+              
+              <div class="skill-item">
+                <h3 class="skill-title">Product Design & Strategy</h3>
+                <p class="skill-desc">Expertise in product architecture, solution design, and strategic planning to deliver user-focused solutions.</p>
+              </div>
+              
+              <div class="skill-item">
+                <h3 class="skill-title">System Design & Problem Solving</h3>
+                <p class="skill-desc">Proven experience in designing system architecture, applying design patterns, and solving complex technical challenges at scale.</p>
+              </div>
+              
+              <div class="skill-item">
+                <h3 class="skill-title">Full-Cycle Development</h3>
+                <p class="skill-desc">Hands-on experience across frontend, backend, and infrastructure - from concept to deployment and maintenance.</p>
+              </div>
+              
+              <div class="skill-item">
+                <h3 class="skill-title">Process Champion</h3>
+                <p class="skill-desc">Active contributor to open-source projects, advocate for collaborative development practices and mechanics.</p>
+              </div>
+              
+              <div class="skill-item">
+                <h3 class="skill-title">Domain Experience</h3>
+                <p class="skill-desc">Worked across observability, telemedicine, fintech, e-commerce, and content marketing, adapting to different business contexts.</p>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="github-contrib">
-          <div class="calendar">
-            Loading github contributions...
+          <div class="hobby-section">
+            <h3 class="hobby-toggle" id="hobby-toggle">
+              My hobby works
+              <span class="toggle-icon">+</span>
+            </h3>
+            <div class="hobby-content" id="hobby-content">
+              <div class="projects-section">
+                <div class="project-links">
+                  <a href="/sequence-planner" target="_blank" class="project-link">
+                    <span class="project-name">Sequence Planner</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" fill="currentColor"></path>
+                    </svg>
+                  </a>
+                  <a href="/mytaxcalc" target="_blank" class="project-link">
+                    <span class="project-name">Malaysia Tax Calculator</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" fill="currentColor"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="calendar" id="github-calendar">
+                Loading github contributions...
+              </div>
+            </div>
           </div>
         </section>
         <footer class="footer">
@@ -189,6 +210,25 @@ Passionate contributor and supporter of open-source technologies.
               </svg>
               blog
             </a>
+            <a
+              class="social-link"
+              href="https://dribbble.com/idibosh"
+              target="_blank"
+            >
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              dribbble
+            </a>
           </div>
         </footer>
       </div>
@@ -196,6 +236,62 @@ Passionate contributor and supporter of open-source technologies.
 
     <script>
       new GitHubCalendar(".calendar", "itsmunim", { responsive: true, tooltips: true });
+      
+      
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+      
+      // Dropdown functionality
+      const dropdowns = document.querySelectorAll('.dropdown');
+      
+      dropdowns.forEach(dropdown => {
+        const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+        
+        dropdownToggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          // Close other dropdowns
+          dropdowns.forEach(d => {
+            if (d !== dropdown) d.classList.remove('active');
+          });
+          dropdown.classList.toggle('active');
+        });
+      });
+      
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+          dropdowns.forEach(dropdown => {
+            dropdown.classList.remove('active');
+          });
+        }
+      });
+      
+      // Expertise section toggle
+      const expertiseToggle = document.getElementById('expertise-toggle');
+      const expertiseSection = document.querySelector('.expertise-section');
+      
+      expertiseToggle.addEventListener('click', function() {
+        expertiseSection.classList.toggle('expanded');
+      });
+      
+      // Hobby section toggle
+      const hobbyToggle = document.getElementById('hobby-toggle');
+      const hobbySection = document.querySelector('.hobby-section');
+      
+      hobbyToggle.addEventListener('click', function() {
+        hobbySection.classList.toggle('expanded');
+      });
     </script>
   </body>
 </html>
