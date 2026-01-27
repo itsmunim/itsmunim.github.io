@@ -14,6 +14,12 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16.png" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#021027" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,16 +28,13 @@
       rel="stylesheet"
     />
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script src="https://unpkg.com/three@0.140.0/build/three.min.js"></script>
 
     <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
     />
-    <script
-      src="/_next/static/chunks/app/layout-43c7de2735aa50ed.js"
-      async=""
-    ></script>
     <meta
       name="google-site-verification"
       content="lcQ1Xwf6F07fGqKHd8tK9favfrdSmfv6t8-G1OJ4IA8"
@@ -41,7 +44,7 @@
     <title>Md Abdul Munim - Senior Development Manager at Amazon | Engineering Leader</title>
     <meta
       name="description"
-      content="Md Abdul Munim - Senior Development Manager at Amazon, Engineering Leader with 7+ years experience. Former BUET graduate specializing in strategic problem solving, people leadership, and full-cycle development."
+      content="Senior engineering leader with experience leading multi-squad tribes across Europe and Southeast Asia. Expertise in multi-year strategy, large-scale consumer services, and distributed platform infrastructure."
     />
     <meta name="keywords" content="Md Abdul Munim, Abdul Munim, Munim Dibosh, Amazon SDM, Engineering Leader, BUET, Bangladesh University of Engineering Technology, Software Development Manager, Strategic Problem Solver" />
     <meta name="author" content="Md Abdul Munim" />
@@ -53,7 +56,7 @@
     <meta property="og:title" content="Md Abdul Munim - Senior Development Manager at Amazon | Engineering Leader" />
     <meta
       property="og:description"
-      content="Md Abdul Munim - Senior Development Manager at Amazon, Engineering Leader with 7+ years experience. Former BUET graduate specializing in strategic problem solving, people leadership, and full-cycle development."
+      content="Senior engineering leader with experience leading multi-squad tribes across Europe and Southeast Asia. Expertise in multi-year strategy, large-scale consumer services, and distributed platform infrastructure."
     />
     <meta property="og:image" content="https://itsmunim.github.io/images/profile.jpeg" />
     <meta property="og:image:alt" content="Md Abdul Munim - Senior Development Manager at Amazon" />
@@ -65,7 +68,7 @@
     <meta name="twitter:title" content="Md Abdul Munim - Senior Development Manager at Amazon | Engineering Leader" />
     <meta
       name="twitter:description"
-      content="Md Abdul Munim - Senior Development Manager at Amazon, Engineering Leader with 7+ years experience. Former BUET graduate specializing in strategic problem solving, people leadership, and full-cycle development."
+      content="Senior engineering leader with experience leading multi-squad tribes across Europe and Southeast Asia. Expertise in multi-year strategy, large-scale consumer services, and distributed platform infrastructure."
     />
     <meta name="twitter:image" content="https://itsmunim.github.io/images/profile.jpeg" />
     <meta name="twitter:creator" content="@munimdibosh" />
@@ -104,11 +107,11 @@
         "Full-Stack Development",
         "Software Development"
       ],
-      "description": "Senior Development Manager at Amazon with 7+ years experience in engineering leadership, strategic problem solving, and full-cycle development. BUET graduate specializing in people management and technical leadership."
+      "description": "Senior engineering leader with experience leading multi-squad tribes across Europe and Southeast Asia. Expertise in multi-year strategy, large-scale consumer services, and distributed platform infrastructure."
     }
     </script>
-  </head>
   <body>
+    <canvas id="network-canvas"></canvas>
     <main class="wrapper">
       <div class="content">
         <nav class="nav">
@@ -139,8 +142,26 @@
         
         <section id="about" class="about-section">
           <p class="about-intro">
-            I'm <strong>Md Abdul Munim</strong>, a Senior Development Manager at Amazon with 7+ years of experience in engineering leadership. As a BUET (Bangladesh University of Engineering and Technology) graduate, I focus on solving complex business problems leveraging strategic thinking and technology. I enable people with my diverse experience in building solutions that work, spanning people leadership, product design, and full-cycle development across various domains including observability, telemedicine, fintech, e-commerce, and content marketing.
+            Senior engineering leader with experience of leading multi-squad tribes across Europe and Southeast Asia. Expertise in multi-year strategy, building large-scale consumer services, and operating critical distributed platform infrastructure. Strong background in MACH architecture, observability, fintech, and developer platforms, with a track record of translating business goals into durable engineering outcomes while building high-performing teams.
           </p>
+          
+          <div class="current-role-section">
+            <h3 class="current-role-title">Current Role</h3>
+            <div class="current-role-item">
+              <h4 class="company-name">Amazon</h4>
+              <p class="role-title">Senior Development Manager</p>
+              <p class="role-description">Lead Network Observability Alerts for AWS Global Connectivity, operating tier-1
+              systems monitoring networks across 34 regions with 99.999% availability.</p>
+            </div>
+          </div>
+          
+          <div class="education-section">
+            <h3 class="education-title">Education</h3>
+            <div class="education-item">
+              <h4 class="university-name">Bangladesh University of Engineering & Technology (BUET)</h4>
+              <p class="degree-info">Bachelor of Science in Computer Science & Engineering</p>
+            </div>
+          </div>
           
           <div class="expertise-section">
             <h3 class="expertise-toggle" id="expertise-toggle">
@@ -149,33 +170,33 @@
             </h3>
             <div class="skills-grid" id="skills-grid">
               <div class="skill-item">
-                <h3 class="skill-title">Leadership & People Management</h3>
-                <p class="skill-desc">7+ years experience in leading engineering teams, managing individual contributors as well as managers. Making strategic decisions that align technical leadership with business goals is my core expertise.</p>
+                <h3 class="skill-title">Multi-Squad Leadership</h3>
+                <p class="skill-desc">Experience leading engineering tribes across Europe and Southeast Asia, managing multiple squads and aligning cross-functional teams toward strategic objectives.</p>
               </div>
               
               <div class="skill-item">
-                <h3 class="skill-title">Product Design & Strategy</h3>
-                <p class="skill-desc">Expertise in product architecture, solution design, and strategic planning to deliver user-focused solutions.</p>
+                <h3 class="skill-title">Multi-Year Strategy</h3>
+                <p class="skill-desc">Expertise in setting long-term technical vision and roadmaps, translating business goals into durable engineering outcomes and sustainable architecture decisions.</p>
               </div>
               
               <div class="skill-item">
-                <h3 class="skill-title">System Design & Problem Solving</h3>
-                <p class="skill-desc">Proven experience in designing system architecture, applying design patterns, and solving complex technical challenges at scale.</p>
+                <h3 class="skill-title">Large-Scale Consumer Services</h3>
+                <p class="skill-desc">Proven experience building and scaling consumer-facing platforms, handling high-traffic distributed systems and ensuring reliability at scale.</p>
               </div>
               
               <div class="skill-item">
-                <h3 class="skill-title">Full-Cycle Development</h3>
-                <p class="skill-desc">Hands-on experience across frontend, backend, and infrastructure - from concept to deployment and maintenance.</p>
+                <h3 class="skill-title">Distributed Platform Infrastructure</h3>
+                <p class="skill-desc">Deep expertise in operating critical infrastructure, microservices architecture, and building resilient distributed systems that power business-critical operations.</p>
               </div>
               
               <div class="skill-item">
-                <h3 class="skill-title">Process Champion</h3>
-                <p class="skill-desc">Active contributor to open-source projects, advocate for collaborative development practices and mechanics.</p>
+                <h3 class="skill-title">MACH Architecture & Observability</h3>
+                <p class="skill-desc">Strong background in modern architecture patterns, observability platforms, monitoring systems, and building developer-friendly tooling and platforms.</p>
               </div>
               
               <div class="skill-item">
-                <h3 class="skill-title">Domain Experience</h3>
-                <p class="skill-desc">Worked across observability, telemedicine, fintech, e-commerce, and content marketing, adapting to different business contexts.</p>
+                <h3 class="skill-title">Fintech & Developer Platforms</h3>
+                <p class="skill-desc">Domain expertise in financial technology solutions and building internal developer platforms that accelerate team productivity and engineering excellence.</p>
               </div>
             </div>
           </div>
@@ -296,8 +317,108 @@
     </main>
 
     <script>
+      // Initialize GitHub Calendar
       new GitHubCalendar(".calendar", "itsmunim", { responsive: true, tooltips: true });
       
+      // Three.js Network Animation
+      function initNetworkAnimation() {
+        try {
+          if (typeof THREE === 'undefined') {
+            console.log('Three.js not loaded, skipping animation');
+            return;
+          }
+          
+          const canvas = document.getElementById('network-canvas');
+          if (!canvas) {
+            console.log('Canvas not found');
+            return;
+          }
+          
+          const scene = new THREE.Scene();
+          const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+          const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+          renderer.setPixelRatio(window.devicePixelRatio);
+          renderer.setSize(window.innerWidth, window.innerHeight, false);
+          renderer.setClearColor(0x000000, 0);
+          // Create nodes
+          const nodes = [];
+          const count = 50;
+          const size = Math.random() * 10 + 5;
+          const nodeGeometry = new THREE.SphereGeometry(0.03, size, size);
+          const nodeMaterial = new THREE.MeshBasicMaterial({ 
+            color: 0x4a90e2, 
+            opacity: 0.4, 
+            transparent: true 
+          });
+          
+          for (let i = 0; i < count; i++) {
+            const node = new THREE.Mesh(nodeGeometry, nodeMaterial);
+            node.position.set(
+              (Math.random() - 0.5) * 15,
+              (Math.random() - 0.5) * 15,
+              (Math.random() - 0.5) * 15
+            );
+            nodes.push(node);
+            scene.add(node);
+          }
+          
+          // Create connections
+          const lineMaterial = new THREE.LineBasicMaterial({ 
+            color: 0x4a90e2, 
+            opacity: 0.15, 
+            transparent: true 
+          });
+          
+          for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+              const distance = nodes[i].position.distanceTo(nodes[j].position);
+              if (distance < 4 && Math.random() > 0.8) {
+                const points = [nodes[i].position, nodes[j].position];
+                const geometry = new THREE.BufferGeometry().setFromPoints(points);
+                const line = new THREE.Line(geometry, lineMaterial);
+                scene.add(line);
+              }
+            }
+          }
+          
+          camera.position.z = 12;
+          
+          function animate() {
+            requestAnimationFrame(animate);
+            
+            // Slow rotation
+            scene.rotation.y += 0.001;
+            scene.rotation.x += 0.0005;
+            
+            // Subtle node movement
+            nodes.forEach((node, index) => {
+              node.position.y += Math.sin(Date.now() * 0.0005 + index) * 0.001;
+            });
+            
+            renderer.render(scene, camera);
+          }
+          
+          animate();
+          
+          // Handle window resize
+          window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(window.innerWidth, window.innerHeight, false);
+          });
+          
+          console.log('Network animation initialized successfully');
+          
+        } catch (error) {
+          console.error('Error initializing network animation:', error);
+        }
+      }
+      
+      // Initialize animation after page loads
+      window.addEventListener('load', () => {
+        setTimeout(initNetworkAnimation, 100);
+      });
       
       // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
