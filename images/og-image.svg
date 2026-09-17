@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#05070b"/>
+  <radialGradient id="c" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#ff5d3a" stop-opacity="0.16"/>
+    <stop offset="1" stop-color="#ff5d3a" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="b" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#4a9eff" stop-opacity="0.12"/>
+    <stop offset="1" stop-color="#4a9eff" stop-opacity="0"/>
+  </radialGradient>
+  <circle cx="210" cy="180" r="360" fill="url(#c)"/>
+  <circle cx="1040" cy="200" r="360" fill="url(#b)"/>
+  <rect x="1" y="1" width="1198" height="628" rx="28" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+  <text x="600" y="372" text-anchor="middle" font-family="Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="210" font-weight="600" letter-spacing="-6">
+    <tspan fill="#f2f4f8">munim</tspan><tspan fill="#ff5d3a">.</tspan>
+  </text>
+  <text x="600" y="470" text-anchor="middle" font-family="Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="500" fill="#f2f4f8">Md Abdul Munim</text>
+  <text x="600" y="526" text-anchor="middle" font-family="Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" fill="#9aa3b2">Engineering Leader · Platform &amp; SRE</text>
+  <text x="600" y="590" text-anchor="middle" font-family="Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" fill="#6b7280">itsmunim.github.io</text>
+</svg>

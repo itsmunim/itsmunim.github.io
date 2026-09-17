@@ -1,0 +1,11 @@
+{
+  "name": "itsmunim-portfolio",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve --port=8080"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

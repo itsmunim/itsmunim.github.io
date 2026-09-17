@@ -1,10 +1,10 @@
 {
-  "name": "Portfolio - Md Abdul Munim",
-  "short_name": "Munim",
+  "name": "Md Abdul Munim",
+  "short_name": "munim.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#021027",
-  "theme_color": "#021027",
+  "background_color": "#05070b",
+  "theme_color": "#05070b",
   "icons": [
     {
       "src": "/favicon/android-chrome-192x192.png",

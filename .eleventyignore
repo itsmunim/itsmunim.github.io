@@ -1,0 +1,2 @@
+# Files Eleventy should not process (node_modules/_site are already ignored)
+README.md

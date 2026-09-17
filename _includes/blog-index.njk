@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — Md Abdul Munim</title>
+    <meta name="description" content="Writing about engineering leadership, distributed systems, and building software." />
+    <link rel="canonical" href="https://itsmunim.github.io/blog/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog — Md Abdul Munim" />
+    <meta property="og:description" content="Writing about engineering leadership, distributed systems, and building software." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blog — Md Abdul Munim" />
+    <meta name="twitter:image" content="https://itsmunim.github.io/images/og-image.png" />
+    <meta property="og:url" content="https://itsmunim.github.io/blog/" />
+    <meta property="og:site_name" content="Md Abdul Munim" />
+    <meta property="og:image" content="https://itsmunim.github.io/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <meta name="theme-color" content="#05070b" />
+
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="nav">
+          <a class="brand" href="https://itsmunim.github.io/" aria-label="Home">munim<span class="brand-dot">.</span></a>
+          <nav class="nav-links">
+            <a class="nav-link" href="https://itsmunim.github.io/#about">about</a>
+            <a class="nav-link" href="https://itsmunim.github.io/#expertise">expertise</a>
+            <a class="nav-link" href="https://itsmunim.github.io/#projects">projects</a>
+            <a class="nav-link nav-link-active" href="/blog/">blog</a>
+            <a class="nav-link nav-cta" href="https://www.linkedin.com/in/munimdibosh/" target="_blank">linkedin</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="blog-index container">
+        <p class="kicker">writing</p>
+        <h1 class="blog-index-title">Blog</h1>
+        {{ content | safe }}
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="links">
+          <a href="https://www.linkedin.com/in/munimdibosh/" target="_blank" class="social-link">linkedin ↗</a>
+          <a href="https://github.com/itsmunim" target="_blank" class="social-link">github ↗</a>
+          <a href="https://medium.com/@munimdibosh" target="_blank" class="social-link">medium ↗</a>
+          <a href="https://dribbble.com/idibosh" target="_blank" class="social-link">dribbble ↗</a>
+        </div>
+        <p class="copy">© 2026 Md Abdul Munim — built with a little too much coffee.</p>
+      </div>
+    </footer>
+  </body>
+</html>

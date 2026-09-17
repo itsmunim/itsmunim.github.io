@@ -1,0 +1,20 @@
+# Md Abdul Munim
+
+> Engineering leader (Senior Development Manager at Amazon) with 14+ years in the industry and 7+ years in engineering leadership. Experience leading multi-squad tribes and org-wide platform/SRE initiatives across Europe and Southeast Asia.
+
+## Key facts
+- 14+ years industry experience, 7+ years engineering leadership, 20+ systems architected, 6+ developer platform (PaaS) solutions delivered.
+- Leading Network Observability Alerts at Amazon, spanning 34 AWS regions at 99.999% availability.
+- BSc Computer Science & Engineering, BUET (Bangladesh University of Engineering & Technology).
+
+## Pages
+- [Home](https://itsmunim.github.io/) - Profile, stats, expertise, selected projects.
+- [Blog](https://itsmunim.github.io/blog/) - Writing on engineering leadership, distributed systems, and building software.
+
+## Selected projects
+- [kivo](https://itsmunim.github.io/kivo/) - Open source Redis-compatible in-memory data store written in Go. Matches or beats Redis on 11 of 12 same-machine benchmarks.
+- [Kustron](https://itsmunim.github.io/kustron/) - Local dev environment in minutes: k8s cluster, registry, build, and deploy from one yaml file.
+
+## Links
+- GitHub: https://github.com/itsmunim
+- LinkedIn: https://www.linkedin.com/in/munimdibosh/
