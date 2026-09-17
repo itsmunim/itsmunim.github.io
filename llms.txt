@@ -1,6 +1,6 @@
 # Md Abdul Munim
 
-> Engineering leader (Senior Development Manager at Amazon) with 14+ years in the industry and 7+ years in engineering leadership. Experience leading multi-squad tribes and org-wide platform/SRE initiatives across Europe and Southeast Asia.
+> Engineering leader (Software Development Manager III at Amazon) with 14+ years in the industry and 7+ years in engineering leadership. Experience leading multi-squad tribes and org-wide platform/SRE initiatives across Europe and Southeast Asia.
 
 ## Key facts
 - 14+ years industry experience, 7+ years engineering leadership, 20+ systems architected, 6+ developer platform (PaaS) solutions delivered.
