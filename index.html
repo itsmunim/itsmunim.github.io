@@ -13,16 +13,6 @@
 
       gtag('config', 'G-NY00GC92QL');
     </script>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-          'gtm.start':
-            new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-NDXJXQ2N');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
@@ -38,14 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-    <script src="https://unpkg.com/three@0.140.0/build/three.min.js"></script>
 
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
-    />
     <meta
       name="google-site-verification"
       content="lcQ1Xwf6F07fGqKHd8tK9favfrdSmfv6t8-G1OJ4IA8"
@@ -122,25 +105,14 @@
     }
     </script>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDXJXQ2N" height="0" width="0"
-        style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <canvas id="network-canvas"></canvas>
     <main class="wrapper">
       <div class="content">
         <nav class="nav">
           <div class="nav-links">
             <a class="nav-link" href="#about">about</a>
-            <div class="dropdown">
-              <a class="nav-link dropdown-toggle" href="#">social</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-link" href="https://www.linkedin.com/in/munimdibosh/" target="_blank">linkedin</a>
-                <a class="dropdown-link" href="https://github.com/itsmunim" target="_blank">github</a>
-                <a class="dropdown-link" href="https://medium.com/@munimdibosh" target="_blank">blog</a>
-                <a class="dropdown-link" href="https://dribbble.com/idibosh" target="_blank">dribbble</a>
-              </div>
-            </div>
+            <a class="nav-link" href="#projects">projects</a>
+            <a class="nav-link" href="https://www.linkedin.com/in/munimdibosh/" target="_blank">linkedin</a>
+            <a class="nav-link" href="https://github.com/itsmunim" target="_blank">github</a>
           </div>
         </nav>
         <section class="hero">
@@ -216,7 +188,7 @@
             </div>
           </div>
         </section>
-        <section class="github-contrib">
+        <section class="github-contrib" id="projects">
           <div class="hobby-section">
             <h3 class="hobby-toggle" id="hobby-toggle">
               My hobby works
@@ -225,6 +197,14 @@
             <div class="hobby-content" id="hobby-content">
               <div class="projects-section">
                 <div class="project-links">
+                  <a href="/kivo" target="_blank" class="project-link">
+                    <span class="project-name">kivo</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" fill="currentColor"></path></svg>
+                  </a>
+                  <a href="/kustron" target="_blank" class="project-link">
+                    <span class="project-name">Kustron</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" fill="currentColor"></path></svg>
+                  </a>
                   <a href="/my-gym-buddy" target="_blank" class="project-link">
                     <span class="project-name">MyGymBuddy</span>
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -246,9 +226,6 @@
                     </svg>
                   </a>
                 </div>
-              </div>
-              <div class="calendar" id="github-calendar">
-                Loading github contributions...
               </div>
             </div>
           </div>
@@ -332,109 +309,6 @@
     </main>
 
     <script>
-      // Initialize GitHub Calendar
-      new GitHubCalendar(".calendar", "itsmunim", { responsive: true, tooltips: true });
-      
-      // Three.js Network Animation
-      function initNetworkAnimation() {
-        try {
-          if (typeof THREE === 'undefined') {
-            console.log('Three.js not loaded, skipping animation');
-            return;
-          }
-          
-          const canvas = document.getElementById('network-canvas');
-          if (!canvas) {
-            console.log('Canvas not found');
-            return;
-          }
-          
-          const scene = new THREE.Scene();
-          const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-          const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
-          renderer.setPixelRatio(window.devicePixelRatio);
-          renderer.setSize(window.innerWidth, window.innerHeight, false);
-          renderer.setClearColor(0x000000, 0);
-          // Create nodes
-          const nodes = [];
-          const count = 50;
-          const size = Math.random() * 10 + 5;
-          const nodeGeometry = new THREE.SphereGeometry(0.03, size, size);
-          const nodeMaterial = new THREE.MeshBasicMaterial({ 
-            color: 0x4a90e2, 
-            opacity: 0.4, 
-            transparent: true 
-          });
-          
-          for (let i = 0; i < count; i++) {
-            const node = new THREE.Mesh(nodeGeometry, nodeMaterial);
-            node.position.set(
-              (Math.random() - 0.5) * 15,
-              (Math.random() - 0.5) * 15,
-              (Math.random() - 0.5) * 15
-            );
-            nodes.push(node);
-            scene.add(node);
-          }
-          
-          // Create connections
-          const lineMaterial = new THREE.LineBasicMaterial({ 
-            color: 0x4a90e2, 
-            opacity: 0.15, 
-            transparent: true 
-          });
-          
-          for (let i = 0; i < nodes.length; i++) {
-            for (let j = i + 1; j < nodes.length; j++) {
-              const distance = nodes[i].position.distanceTo(nodes[j].position);
-              if (distance < 4 && Math.random() > 0.8) {
-                const points = [nodes[i].position, nodes[j].position];
-                const geometry = new THREE.BufferGeometry().setFromPoints(points);
-                const line = new THREE.Line(geometry, lineMaterial);
-                scene.add(line);
-              }
-            }
-          }
-          
-          camera.position.z = 12;
-          
-          function animate() {
-            requestAnimationFrame(animate);
-            
-            // Slow rotation
-            scene.rotation.y += 0.001;
-            scene.rotation.x += 0.0005;
-            
-            // Subtle node movement
-            nodes.forEach((node, index) => {
-              node.position.y += Math.sin(Date.now() * 0.0005 + index) * 0.001;
-            });
-            
-            renderer.render(scene, camera);
-          }
-          
-          animate();
-          
-          // Handle window resize
-          window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setPixelRatio(window.devicePixelRatio);
-            renderer.setSize(window.innerWidth, window.innerHeight, false);
-          });
-          
-          console.log('Network animation initialized successfully');
-          
-        } catch (error) {
-          console.error('Error initializing network animation:', error);
-        }
-      }
-      
-      // Initialize animation after page loads
-      window.addEventListener('load', () => {
-        setTimeout(initNetworkAnimation, 100);
-      });
-      
       // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -448,32 +322,6 @@
           }
         });
       });
-      
-      // Dropdown functionality
-      const dropdowns = document.querySelectorAll('.dropdown');
-      
-      dropdowns.forEach(dropdown => {
-        const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
-        
-        dropdownToggle.addEventListener('click', function(e) {
-          e.preventDefault();
-          // Close other dropdowns
-          dropdowns.forEach(d => {
-            if (d !== dropdown) d.classList.remove('active');
-          });
-          dropdown.classList.toggle('active');
-        });
-      });
-      
-      // Close dropdown when clicking outside
-      document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
-          dropdowns.forEach(dropdown => {
-            dropdown.classList.remove('active');
-          });
-        }
-      });
-      
       // Expertise section toggle
       const expertiseToggle = document.getElementById('expertise-toggle');
       const expertiseSection = document.querySelector('.expertise-section');
