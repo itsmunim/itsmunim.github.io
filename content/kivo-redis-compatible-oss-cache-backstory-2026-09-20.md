@@ -6,7 +6,7 @@ date: 2026-09-20
 
 ## What is `kivo`?
 
-`kivo` is a lightweight, Redis-compatible, in-memory datastore written in Go. It started as a weekend experiment, and over a few weekends turned into a genuinely usable option for most of the caching and storage needs Redis covers. It is not distributed - think of it as an alternative to Redis standalone. If it sounds useful to you, give it a try - [github.com/itsmunim/kivo](https://github.com/itsmunim/kivo)
+`kivo` is a lightweight, Redis-compatible, in-memory datastore written in Go. It started as an experiment, and over a few weekends was able to release v1, with the core features needed for caching and KV storage. It is not distributed - think of it as an alternative to Redis standalone. If it sounds useful to you, give it a try - [github.com/itsmunim/kivo](https://github.com/itsmunim/kivo)
 
 ## How it all started
 
