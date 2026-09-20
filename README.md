@@ -37,7 +37,9 @@ Personal portfolio site and blog, built with [Eleventy](https://www.11ty.dev/) (
 
 3. The filename becomes the URL. `content/my-new-post.md` → `https://itsmunim.github.io/blog/my-new-post/`
 
-4. Commit and push to `main` — the GitHub Actions workflow builds with Eleventy and deploys to GitHub Pages automatically.
+4. **Comments:** Giscus uses `pathname` mapping, so each post's comments are keyed to its page path — no per-post setup, comments appear automatically. The one rule: **a post file can't be renamed after publishing** (the path change orphans its comment thread).
+
+5. Commit and push to `main` — the GitHub Actions workflow builds with Eleventy and deploys to GitHub Pages automatically.
 
 ## Local preview
 

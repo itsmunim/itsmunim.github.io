@@ -766,3 +766,16 @@ a {
   padding: 0 24px 72px;
   max-width: 760px;
 }
+
+/* Giscus comments */
+.giscus-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 24px 8px;
+}
+
+.giscus {
+  width: 100%;
+  border-top: 1px solid var(--border);
+  padding-top: 28px;
+}
